@@ -28,10 +28,12 @@
 # Default values for the settings that this segment supports.
 NORMAL_AND_PREFIX_MODE_ENABLED_DEFAULT="true"
 
-NORMAL_MODE_TEXT_DEFAULT="normal"
+#NORMAL_MODE_TEXT_DEFAULT="normal"
+NORMAL_MODE_TEXT_DEFAULT=" zsh"
 NORMAL_MODE_TEXT_COLOR_DEFAULT="$TMUX_POWERLINE_CUR_SEGMENT_FG"
 
-PREFIX_MODE_TEXT_DEFAULT="prefix"
+#PREFIX_MODE_TEXT_DEFAULT="prefix"
+PREFIX_MODE_TEXT_DEFAULT=" tmux"
 PREFIX_MODE_TEXT_COLOR_DEFAULT="$TMUX_POWERLINE_CUR_SEGMENT_FG"
 
 MOUSE_MODE_ENABLED_DEFAULT="true"
@@ -94,7 +96,7 @@ run_segment() {
 	# Populate segment.
 	segment=""
 	__normal_and_prefix_mode_indicator
-	__mouse_mode_indicator
+	#__mouse_mode_indicator
 	# Copy mode should always be populated last; see comments in
 	# __copy_mode_indicator for more details.
 	__copy_mode_indicator

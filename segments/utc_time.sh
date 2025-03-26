@@ -12,6 +12,6 @@ EORC
 }
 
 run_segment() {
-	date -u +"$TMUX_POWERLINE_SEG_UTC_TIME_FORMAT"
+	echo " $(date -u +"$TMUX_POWERLINE_SEG_UTC_TIME_FORMAT")"
 	return 0
 }

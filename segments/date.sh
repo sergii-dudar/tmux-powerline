@@ -12,6 +12,6 @@ EORC
 }
 
 run_segment() {
-	date +"$TMUX_POWERLINE_SEG_DATE_FORMAT"
+	echo " $(date +"$TMUX_POWERLINE_SEG_DATE_FORMAT")"
 	return 0
 }
